@@ -1,0 +1,73 @@
+.goal-container {
+  width: 1440px;
+  height: 598px;
+  background-image: linear-gradient(
+    to right,
+    rgba(231, 240, 255, 1),
+    rgba(232, 241, 255, 0.47)
+  );
+  padding-top: 65px;
+}
+.goal-content {
+  /* margin-top: 65px; */
+  display: flex;
+  gap: 71px;
+  width: 1153px;
+  height: 486px;
+  margin: auto;
+  /* background-color: black; */
+  align-items: center;
+}
+.goal-images {
+  width: 519px;
+  height: 486px;
+}
+
+.goal-images img {
+  width: 332px;
+  height: 275px;
+  border: 5px solid rgba(255, 255, 255, 1);
+}
+.goal-images-row1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.consultation-card {
+  position: absolute;
+  left: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 234.45px;
+  height: 86px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 2;
+}
+.goal-image1 {
+  position: relative;
+  align-items: end;
+  z-index: 1;
+}
+.goal-image2 {
+  position: relative;
+  margin-top: -64px;
+  margin-left: 83px;
+  z-index: 2;
+}
+
+.goal-text {
+  width: 563px;
+  height: 375px;
+}
+
+.list-item {
+  display: flex;
+  color: rgba(27, 60, 116, 1);
+  font-weight: 500;
+  line-height: 27px;
+  align-items: center;
+  margin-top: 27px;
+}

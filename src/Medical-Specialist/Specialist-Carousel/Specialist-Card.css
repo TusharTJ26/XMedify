@@ -1,0 +1,32 @@
+.specialist-card {
+  height: 505px;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.specialist-card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 415px;
+  border-radius: 250px 250px 4px 4px;
+}
+.specialist-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 350px;
+  height: 395px;
+  border-radius: 250px 250px 8px 8px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(225, 243, 255, 1),
+    rgba(42, 167, 255, 1)
+  );
+}
+.specialist-card-discription {
+  width: 370px;
+  height: 75px;
+}

@@ -1,0 +1,64 @@
+.specialist-container {
+  width: 1440px;
+  height: 819px;
+  margin: auto;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+}
+.specialist-heading {
+  margin-top: 70px;
+  margin-bottom: 54px;
+  width: 543px;
+  height: 67px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67px;
+  color: rgba(27, 60, 116, 1);
+}
+
+.swiper-pagination {
+  /* margin-top: 1000px; */
+  /* position: absolute;
+  bottom: 20px; */
+}
+
+.swiper-pagination-bullet {
+  background-color: #ccc; /* default bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007bff; /* active bullet */
+}
+
+/* MOVE the indicators down */
+/* .carousel-indicators.custom-indicators {
+  bottom: -30px;
+} */
+
+/* STYLE the circular buttons */
+/* .custom-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d0d0d0;
+  margin: 0 6px;
+  border: none;
+  opacity: 1;
+} */
+/* .carousel-indicators.custom-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: #d0d0d0 !important;
+  margin: 0 6px;
+  border: none !important;
+  opacity: 1 !important;
+} */
+
+/* Active indicator */
+/* .carousel-indicators.custom-indicators .active {
+  background-color: #0d6efd !important;
+  transform: scale(1.3);
+} */

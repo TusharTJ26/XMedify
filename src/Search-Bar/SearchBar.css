@@ -1,0 +1,37 @@
+.search-holder {
+  width: 1166px;
+  height: 111px;
+  border-radius: 15px;
+  padding: 27px 24px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 6px 6px 35px rgba(16, 40, 81, 0.11);
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+.searchBar-form {
+  width: 1119px;
+  height: 57px;
+  gap: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchBar-form select {
+  height: 50px;
+  border: 1px rgba(240, 240, 240, 1) solid;
+  border-radius: 8px;
+  color: rgba(171, 182, 199, 1);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2%;
+}
+.searchBar-form button {
+  width: 231px;
+  height: 50px;
+  background-color: rgba(42, 168, 255, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2%;
+}

@@ -1,0 +1,19 @@
+.service-holder h3 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  width: 1170px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 55px;
+}
+.service-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  margin-top: 25px;
+  width: 1100px;
+}

@@ -1,0 +1,145 @@
+.medical-center-card-holder {
+  display: flex;
+  flex-direction: column;
+  width: 786px;
+  height: 269px;
+  border-bottom: 1px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+}
+
+.medical-center-card-content {
+  display: flex;
+  gap: 14px;
+  width: 785.56px;
+  height: 268.38px;
+  border-radius: 15px;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.medical-center-card-details {
+  width: 487.55px;
+  height: 220.38px;
+  display: flex;
+  gap: 8px;
+}
+.medical-center-image-container {
+  /* background-color: black; */
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.medical-center-image-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 124px;
+  background-color: rgba(140, 207, 255, 1);
+  border-radius: 100px;
+  z-index: 1;
+}
+.medical-center-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 339.55px;
+  height: 220.38px;
+}
+.medical-center-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: rgba(20, 190, 240, 1);
+}
+.medical-center-location {
+  width: 307.55px;
+  height: 85.69px;
+  font-size: 14px;
+  line-height: 19.6px;
+  /* margin-left: 16px; */
+}
+.medical-center-location h3 {
+  font-weight: 700;
+  color: rgba(65, 65, 70, 1);
+}
+.medical-center-location h5 {
+  font-weight: 400;
+  color: rgba(65, 65, 70, 1);
+}
+.medical-center-rating {
+  width: 307.5px;
+  height: 39.5px;
+  border-top: 1px dashed rgba(232, 232, 240, 1);
+  padding-top: 17px;
+  margin-top: 10px;
+}
+.medical-center-rating div {
+  display: flex;
+  gap: 2.79px;
+  justify-content: center;
+  align-items: center;
+  width: 44.08px;
+  height: 22.5px;
+  border-radius: 3.5px;
+  padding: 4.5px 7.49px 4px 10.8px;
+  background-color: rgba(0, 165, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+}
+.medical-center-booking-btn-holder {
+  width: 236.01px;
+  height: 220.38px;
+  font-size: 14px;
+  position: relative;
+  font-weight: 500;
+}
+.medical-center-booking-btn-holder p {
+  line-height: 19.6px;
+  color: rgba(1, 164, 0, 1);
+}
+.medical-center-booking-btn-holder button {
+  width: 212px;
+  height: 40px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(42, 167, 255, 1);
+  border: 1px solid rgba(20, 190, 240, 1);
+  border-radius: 4px;
+}
+
+.booked-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 31.59px;
+  border: 1px solid rgba(42, 167, 255, 1);
+  border-radius: 3px;
+  color: rgba(42, 167, 255, 1);
+
+  /* font-family: Lato; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+.booked-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 32px;
+  color: rgba(0, 165, 0, 1);
+  border: 1px solid rgba(0, 165, 0, 1);
+  border-radius: 3px;
+
+  /* font-family: Lato; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19.6px;
+}

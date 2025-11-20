@@ -1,0 +1,64 @@
+.blueBox {
+  width: 1440px;
+  height: 110px;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    to right,
+    rgba(42, 167, 255, 1),
+    rgba(12, 140, 229, 1)
+  );
+}
+
+.medical-center-holder {
+  display: flex;
+  width: 1440px;
+  gap: 14px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(231, 240, 255, 1),
+    rgba(232, 241, 255, 0.47)
+  );
+  justify-content: center;
+  padding-top: 150px;
+  margin-top: -60px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+.medical-center-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 643px;
+  height: 64px;
+  margin-bottom: 24px;
+}
+.medical-center-number h1 {
+  /* font-family: Poppins; */
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+}
+.medical-center-number p {
+  /* font-family: Poppins; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(120, 120, 135, 1);
+}
+
+.medical-center-ad {
+  width: 363px;
+  height: 268px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 90px;
+  /* background-image: url("../../../public/images/Ad/advertisement.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: -10px;
+  background-size: cover;  */
+  /* background-position: center; */
+}

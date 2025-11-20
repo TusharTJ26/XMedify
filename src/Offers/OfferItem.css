@@ -1,0 +1,11 @@
+.offerItemHolder {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.offer-item {
+  width: 398.3px;
+  height: 199.15px;
+
+  border-radius: 20px;
+}

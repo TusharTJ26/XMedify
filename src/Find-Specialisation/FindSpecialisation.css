@@ -1,0 +1,50 @@
+.specialisation-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 62px;
+  width: 1440px;
+  height: 729px;
+  top: 1327px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(231, 240, 255, 1),
+    rgba(232, 241, 255, 0.47)
+  );
+}
+.specialisation-heading {
+  /* font-family: Poppins; */
+  font-weight: 600;
+  /* font-style: SemiBold; */
+  font-size: 48px;
+  line-height: 67px;
+  letter-spacing: 0%;
+  /* text-align: center;
+  vertical-align: middle; */
+  text-transform: capitalize;
+  color: rgba(27, 60, 116, 1);
+}
+.specialisation-cards {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.specialisation-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  height: 180px;
+  border-radius: 10px;
+  padding-top: 22px;
+  padding-right: 70px;
+  padding-bottom: 22px;
+  padding-left: 70px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 34px 44px 0px rgba(213, 219, 228, 0.44);
+}

@@ -1,0 +1,71 @@
+.family-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 789px;
+  background-image: linear-gradient(
+    to left,
+    rgba(231, 240, 255, 1),
+    rgba(232, 241, 255, 0.47)
+  );
+}
+.family-main {
+  width: 1185px;
+  height: 714px;
+  display: flex;
+  gap: 1.6rem;
+}
+.family-text {
+  width: 575px;
+  height: 714px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.family-quote {
+  /* font-family: Poppins; */
+  color: rgba(42, 167, 255, 1);
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.family-heading {
+  /* font-family: Poppins; */
+  color: rgba(27, 60, 116, 1);
+  font-size: 48px;
+  line-height: 67px;
+  font-weight: 600;
+}
+.family-text-content {
+  /* font-family: Inter; */
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 240%;
+  color: rgba(119, 130, 157, 1);
+}
+.family-card-container {
+  width: 585px;
+  height: 714px;
+}
+.family-card-row {
+  width: 565px;
+  height: 388px;
+  display: flex;
+  gap: 2.2rem;
+  /* margin-top: -20px; */
+}
+.family-card-row2 {
+  gap: 2.2rem;
+  width: 565px;
+  height: 375px;
+  margin-top: -46px;
+  display: flex;
+}
+.family-card-item1 {
+  margin-top: 20px;
+}
+.family-card-item2 {
+  margin-top: 69px;
+}

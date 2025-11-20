@@ -1,0 +1,28 @@
+.accordion-holder {
+  width: 464px;
+  height: 382px;
+}
+
+.accordion-item {
+  width: 464px;
+  min-height: 70px;
+}
+
+.accordion-summary {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.accordion-heading {
+  /* font-family: Poppins; */
+  color: rgba(27, 60, 116, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  /* display: flex;
+  align-items: center; */
+  padding-top: 10px;
+}
+.expand-icon {
+  color: rgba(42, 167, 255, 1);
+}

@@ -1,0 +1,41 @@
+.time-container {
+  width: 767px;
+  height: 202px;
+}
+.time-row {
+  width: 767px;
+  height: 73px;
+  border-bottom: 1px solid rgba(240, 240, 245, 1);
+  display: flex;
+  align-items: center;
+}
+/* .time-row span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.day-period {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 142.65px;
+  height: 40px;
+  margin-right: 3px;
+}
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 31.59px;
+  border-radius: 3px;
+  border: 1px solid rgba(42, 167, 255, 1);
+  /* font-family: Lato; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: 0%;
+  margin-right: 32px;
+
+  color: rgba(42, 167, 255, 1);
+}

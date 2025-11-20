@@ -1,0 +1,36 @@
+.home-search-bar {
+  width: 1170px;
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+/* .home-select-bar {
+  width: 285px;
+  height: 50px;
+  border-width: 1px;
+} */
+.home-search-bar select {
+  width: 285px;
+  height: 50px;
+  border-width: 1px solid rgba(240, 240, 240, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  color: rgba(171, 182, 199, 1);
+  border-radius: 8px;
+  background-color: rgba(250, 251, 254, 1);
+}
+.home-search-bar button {
+  width: 121px;
+  height: 50px;
+  background-color: rgba(42, 168, 255, 1);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  color: rgba(255, 255, 255, 1);
+}

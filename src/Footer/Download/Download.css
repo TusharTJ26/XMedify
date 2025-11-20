@@ -1,0 +1,81 @@
+.download-container {
+  display: flex;
+  background-image: linear-gradient(
+    to right,
+    rgba(231, 240, 255, 1),
+    rgba(232, 241, 255, 0.47)
+  );
+  height: 542px;
+  width: 1440px;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.download-main {
+  display: flex;
+  height: 566px;
+  width: 1162px;
+}
+
+.download-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.download-heading {
+  /* font-family: Poppins; */
+  width: 338px;
+  height: 134px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67px;
+  vertical-align: middle;
+}
+.number-container {
+  display: flex;
+  gap: 1rem;
+}
+.number-input {
+  display: flex;
+  align-items: center;
+  width: 390px;
+  height: 47px;
+  background-color: white;
+}
+.number-start {
+  display: flex;
+  background-color: rgba(180, 180, 190, 0.3);
+  color: rgba(0, 0, 0, 1);
+  width: 55.38px;
+  height: 47px;
+  font-size: 14px;
+  font-weight: 700;
+  border-right: 1px rgba(180, 180, 190, 0.3) solid;
+  justify-content: center;
+  align-items: center;
+}
+.inputbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(180, 180, 190, 1);
+  width: 178.62px;
+  height: 18px;
+}
+.send-button {
+  font-family: Poppins;
+  width: 121px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(42, 168, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2%;
+}
+.download-icons {
+  display: flex;
+  gap: 3rem;
+}

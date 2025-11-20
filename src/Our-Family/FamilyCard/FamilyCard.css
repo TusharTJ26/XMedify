@@ -1,0 +1,45 @@
+.family-card {
+  width: 242.5px;
+  height: 304px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 15px 45px -5px rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.family-card-main {
+  width: 242.5px;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.family-card-icon {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 100px;
+  /* padding: 25px; */
+  background-color: rgba(235, 247, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.family-card-number {
+  /* font-family: Poppins; */
+  font-size: 48px;
+  line-height: 48px;
+  color: rgba(27, 60, 116, 1);
+  font-weight: 600;
+}
+.family-card-text {
+  /* font-family: Poppins; */
+  color: rgba(119, 130, 157, 1);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}

@@ -1,0 +1,48 @@
+.qna-holder {
+  width: 1140px;
+  height: 708.84px;
+  margin: auto;
+  margin-top: 25px;
+}
+.qna-heading {
+  text-align: center;
+  margin-top: 10.5px;
+}
+
+.qna-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1120px;
+  height: 575.84px;
+}
+.qna-image-holder {
+  width: 522px;
+  height: 499.84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qna-image {
+  width: 500px;
+  height: 479.84px;
+}
+.qna-heading p {
+  /* font-family: Poppins; */
+  font-weight: 600;
+  color: rgba(42, 167, 255, 1);
+  line-height: 27px;
+}
+.qna-heading h3 {
+  /* font-family: Poppins; */
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67px;
+  color: rgba(27, 60, 116, 1);
+}
+.questions {
+  width: 484px;
+  height: 499.84px;
+  display: flex;
+  align-items: center;
+}

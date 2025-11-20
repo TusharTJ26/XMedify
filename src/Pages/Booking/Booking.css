@@ -1,0 +1,99 @@
+.blueBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 145px;
+  width: 1440px;
+  height: 110px;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    to right,
+    rgba(42, 167, 255, 1),
+    rgba(12, 140, 229, 1)
+  );
+}
+.blueBox h1 {
+  /* font-family: Ubuntu; */
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+}
+.booking-search {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 780px;
+  height: 104px;
+  border-radius: 15px;
+  padding-top: 27px;
+  padding-right: 24px;
+  padding-bottom: 27px;
+  padding-left: 24px;
+  background-color: white;
+  gap: 20px;
+  position: relative;
+  z-index: 100;
+}
+.booking-search input {
+  width: 545px;
+  height: 50px;
+  padding-left: 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(240, 240, 240, 1);
+}
+.booking-search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 177px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px 52px;
+  background-color: rgba(42, 168, 255, 1);
+  color: white;
+  /* font-family: Poppins; */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 2%;
+}
+.booking-content {
+  /* width: 1440px;
+  background-image: linear-gradient(
+    to right,
+    rgba(42, 167, 255, 1),
+    rgba(12, 140, 229, 1)
+  ); */
+  display: flex;
+  width: 1440px;
+  gap: 14px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(231, 240, 255, 1),
+    rgba(232, 241, 255, 0.47)
+  );
+  justify-content: center;
+  padding-top: 50px;
+  align-items: flex-start;
+  /* margin-top: -60px; */
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+.booking-ad {
+  width: 363px;
+  height: 268px;
+  border-radius: 15px;
+  overflow: hidden;
+  /* margin-top: 0px; */
+  /* background-image: url("../../../public/images/Ad/advertisement.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: -10px;
+  background-size: cover;  */
+  /* background-position: center; */
+}

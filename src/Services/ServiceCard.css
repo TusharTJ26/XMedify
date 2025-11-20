@@ -1,0 +1,35 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 203px;
+  height: 153px;
+}
+.service-card-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 203px;
+  height: 153px;
+  border: 1px solid rgba(42, 167, 255, 1);
+  background-color: rgba(42, 167, 255, 0.08);
+}
+.serivce-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+.serivce-card-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: rgba(171, 182, 199, 1);
+}

@@ -1,0 +1,29 @@
+.blog-holder {
+  width: 1140px;
+  height: 677.77px;
+  margin: auto;
+  padding-top: 40px;
+}
+.blog-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.blog-heading p {
+  /* font-family: Poppins; */
+  font-weight: 600;
+  color: rgba(42, 167, 255, 1);
+  line-height: 27px;
+}
+.blog-heading h3 {
+  /* font-family: Poppins; */
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67px;
+  color: rgba(27, 60, 116, 1);
+}
+.blog-main {
+  display: flex;
+  width: 1162px;
+  height: 477.77px;
+  gap: 1.5rem;
+}
