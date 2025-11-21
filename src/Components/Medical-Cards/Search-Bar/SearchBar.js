@@ -12,18 +12,21 @@ export default function SearchBar({
 }) {
   //   const firstPlaceholder = `${(<SearchIcon />)} State`;
   //   const secondPlaceholder = `${(<SearchIcon />)} City`;
+  const [city, setCity] = useState("");
+  const handleForm = (e) => {
+    e.preventDefault();
+    setSelectedCity(city);
+  };
   const navigate = useNavigate();
   return (
     <div className="search-holder">
-      <form
-        className="searchBar-form"
-        //   onSubmit={handleSubmit}
-      >
+      <form className="searchBar-form" onSubmit={handleForm}>
         <div id="state">
           {/* <input type="text" placeholder="State" style={{ width: "326px" }} /> */}
           <select
             style={{ width: "326px" }}
             onChange={(e) => {
+              // setState(e.target.value);
               setSelectedState(e.target.value);
             }}
           >
@@ -43,7 +46,7 @@ export default function SearchBar({
           {/* <input type="text" placeholder="City" style={{ width: "522px" }} /> */}
           <select
             style={{ width: "522px" }}
-            onChange={(e) => setSelectedCity(e.target.value)}
+            onChange={(e) => setCity(e.target.value)}
           >
             <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
               City
@@ -58,11 +61,7 @@ export default function SearchBar({
           </select>
         </div>
         <div>
-          <button
-            type="submit"
-            id="searchBtn"
-            onClick={() => navigate("/medical-center")}
-          >
+          <button type="submit" id="searchBtn">
             <SearchIcon /> Search
           </button>
         </div>
