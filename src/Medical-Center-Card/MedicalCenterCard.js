@@ -13,9 +13,19 @@ export default function MedicalCenterCard({
 }) {
   const navigate = useNavigate();
   const [isBooking, setIsBooking] = useState(false);
+  const handleClick = () => {
+    setIsBooking(!isBooking);
+  };
   return (
     <div>
-      <div className="medical-center-card-holder">
+      {/* {bookingPage?
+        (<div className="medical-center-card-holder">):
+      (<div className="medical-center-card-holder" onClick={() => setIsBooking(!isBooking)}>)
+    } */}
+      <div
+        className="medical-center-card-holder"
+        onClick={bookingPage ? undefined : () => handleClick()}
+      >
         <div className="medical-center-card-content">
           <div className="medical-center-card-details">
             <div className="medical-center-image-container">

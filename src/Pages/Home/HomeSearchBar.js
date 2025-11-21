@@ -13,39 +13,35 @@ export default function HomeSearchBar({
   const navigate = useNavigate();
   return (
     <div className="home-search-bar">
-      <div>
+      <div id="state">
         <select
           onChange={(e) => {
             setSelectedState(e.target.value);
           }}
         >
           <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-            <div id="state">
-              <SearchIcon />
-              State
-            </div>
+            <SearchIcon />
+            State
           </option>
           {stateData.map((state) => {
             return (
               <option key={state} value={state}>
-                <div id="state">{state}</div>
+                {state}
               </option>
             );
           })}
         </select>
       </div>
-      <div>
+      <div id="city">
         <select onChange={(e) => setSelectedCity(e.target.value)}>
           <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-            <div id="city">
-              <SearchIcon />
-              City
-            </div>
+            <SearchIcon />
+            City
           </option>
           {cityData.map((city) => {
             return (
               <option key={city} value={city}>
-                <div id="city">{city}</div>
+                {city}
               </option>
             );
           })}

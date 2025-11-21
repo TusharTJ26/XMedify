@@ -19,7 +19,7 @@ export default function SearchBar({
         className="searchBar-form"
         //   onSubmit={handleSubmit}
       >
-        <div>
+        <div id="state">
           {/* <input type="text" placeholder="State" style={{ width: "326px" }} /> */}
           <select
             style={{ width: "326px" }}
@@ -28,30 +28,30 @@ export default function SearchBar({
             }}
           >
             <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-              <div id="state">State</div>
+              State
             </option>
             {stateData.map((state) => {
               return (
                 <option key={state} value={state}>
-                  <div id="state">{state}</div>
+                  {state}
                 </option>
               );
             })}
           </select>
         </div>
-        <div>
+        <div id="city">
           {/* <input type="text" placeholder="City" style={{ width: "522px" }} /> */}
           <select
             style={{ width: "522px" }}
             onChange={(e) => setSelectedCity(e.target.value)}
           >
             <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-              <div id="city">City</div>
+              City
             </option>
             {cityData.map((city) => {
               return (
                 <option key={city} value={city}>
-                  <div id="city">{city}</div>
+                  {city}
                 </option>
               );
             })}
