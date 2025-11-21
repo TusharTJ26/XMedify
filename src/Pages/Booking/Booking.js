@@ -1,5 +1,5 @@
-import NavBar from "../../NavBar/NavBar";
-import NavTop from "../../NavBar/NavTop";
+import NavBar from "../../Components/Common/NavBar/NavBar";
+import NavTop from "../../Components/Common/NavBar/NavTop";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Booking.css";
 import FooterElement from "../../Components/Common/Footers/Footer";

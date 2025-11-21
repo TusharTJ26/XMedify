@@ -5,14 +5,14 @@ import Questions from "../../Components/Common/FAQ/FAQ";
 import FooterElement from "../../Components/Common/Footers/Footer";
 import Goal from "../../Components/Home/Goal/Goal";
 import MedicalSpecialist from "../../Medical-Specialist/MedicalSpecialist";
-import NavBar from "../../NavBar/NavBar";
+import NavBar from "../../Components/Common/NavBar/NavBar";
 import OurFamily from "../../Components/Home/Hospital-Family/OurFamily";
-import SearchBar from "../../Search-Bar/SearchBar";
-import NavTop from "../../NavBar/NavTop";
-import Services from "../../Services/Services";
+// import SearchBar from "../../Search-Bar/SearchBar";
+import NavTop from "../../Components/Common/NavBar/NavTop";
+import Services from "../../Components/Home/Services/Services";
 import HomeSearchBar from "./HomeSearchBar";
-import FindSpecialisation from "../../Find-Specialisation/FindSpecialisation";
-import Offer from "../../Offers/Offers";
+import FindSpecialisation from "../../Components/Home/Find-Specialisation/FindSpecialisation";
+import Offer from "../../Components/Home/Offers/Offers";
 export default function Home({
   cityData,
   stateData,

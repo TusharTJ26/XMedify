@@ -1,13 +1,11 @@
 import "./MedicalCenter.css";
 
-import SearchBar from "../../Search-Bar/SearchBar";
+import SearchBar from "../../Components/Medical-Cards/Search-Bar/SearchBar";
 import MedicalCenterCard from "../../Medical-Center-Card/MedicalCenterCard";
 import Questions from "../../Components/Common/FAQ/FAQ";
-// import TableFooter from "@mui/material/TableFooter";
 import FooterElement from "../../Components/Common/Footers/Footer";
-import NavTop from "../../NavBar/NavTop";
-import NavBar from "../../NavBar/NavBar";
-import { useState } from "react";
+import NavTop from "../../Components/Common/NavBar/NavTop";
+import NavBar from "../../Components/Common/NavBar/NavBar";
 
 // import SearchBar from "../../Search-Bar/SearchBar";
 export default function MedicalCenter({
