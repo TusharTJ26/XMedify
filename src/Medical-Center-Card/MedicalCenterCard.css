@@ -132,7 +132,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 128px;
+  /* width: 128px; */
+  width: 150px;
   height: 32px;
   color: rgba(0, 165, 0, 1);
   border: 1px solid rgba(0, 165, 0, 1);

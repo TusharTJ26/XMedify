@@ -17,14 +17,14 @@ export default function MedicalSpecialist() {
         <Swiper
           style={{ height: "550px" }}
           modules={[Navigation, Pagination, Autoplay]}
-          // navigation
+          navigation
           pagination={{ clickable: true }}
           // spaceBetween={30}
           // slidesPerView={1}
-          autoplay={{
-            delay: 3000, // time between slides in ms
-            disableOnInteraction: false, // keeps autoplay even after user clicks
-          }}
+          // autoplay={{
+          //   delay: 3000, // time between slides in ms
+          //   disableOnInteraction: false, // keeps autoplay even after user clicks
+          // }}
         >
           <SwiperSlide>
             <div

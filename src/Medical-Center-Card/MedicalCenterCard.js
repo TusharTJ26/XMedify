@@ -10,6 +10,7 @@ export default function MedicalCenterCard({
   bookingPage,
   booking,
   setBooking,
+  date,
 }) {
   const navigate = useNavigate();
   const [isBooking, setIsBooking] = useState(false);
@@ -80,9 +81,9 @@ export default function MedicalCenterCard({
           </div>
           <div className="medical-center-booking-btn-holder">
             {bookingPage ? (
-              <div style={{ display: "flex", gap: "35px" }}>
+              <div style={{ display: "flex", gap: "30px" }}>
                 <div className="booked-time">{time} </div>
-                <div className="booked-date"> </div>
+                <div className="booked-date">{date} </div>
               </div>
             ) : (
               <>

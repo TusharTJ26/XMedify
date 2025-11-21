@@ -82,6 +82,7 @@ export default function Booking({ medicalCenterData, booking, setBooking }) {
                     data={item.hospital}
                     time={item.time}
                     bookingPage={true}
+                    date={item.date}
                   />
                 </div>
               );

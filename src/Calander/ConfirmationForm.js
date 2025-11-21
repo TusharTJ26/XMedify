@@ -11,6 +11,7 @@ export default function Confirm({
   handleClose,
   booking,
   setBooking,
+  selectedDate,
 }) {
   const style = {
     position: "absolute",
@@ -27,6 +28,7 @@ export default function Confirm({
     const dataToSave = {
       hospital: data,
       time: time,
+      date: selectedDate.date,
     };
     // setBooking((prevData) => ({
     //   ...prevData,
