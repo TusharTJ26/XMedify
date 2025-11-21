@@ -2,9 +2,9 @@ import "./MedicalCenter.css";
 
 import SearchBar from "../../Search-Bar/SearchBar";
 import MedicalCenterCard from "../../Medical-Center-Card/MedicalCenterCard";
-import Questions from "../../FAQ/FAQ";
+import Questions from "../../Components/Common/FAQ/FAQ";
 // import TableFooter from "@mui/material/TableFooter";
-import FooterElement from "../../Footer/Footer";
+import FooterElement from "../../Components/Common/Footers/Footer";
 import NavTop from "../../NavBar/NavTop";
 import NavBar from "../../NavBar/NavBar";
 import { useState } from "react";

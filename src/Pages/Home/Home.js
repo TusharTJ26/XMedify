@@ -1,12 +1,12 @@
 import "./Home.css";
 import { useNavigate } from "react-router";
-import Blog from "../../Blogs/Blogs";
-import Questions from "../../FAQ/FAQ";
-import FooterElement from "../../Footer/Footer";
+import Blog from "../../Components/Home/Blog/Blogs";
+import Questions from "../../Components/Common/FAQ/FAQ";
+import FooterElement from "../../Components/Common/Footers/Footer";
 import Goal from "../../Goal/Goal";
 import MedicalSpecialist from "../../Medical-Specialist/MedicalSpecialist";
 import NavBar from "../../NavBar/NavBar";
-import OurFamily from "../../Our-Family/OurFamily";
+import OurFamily from "../../Components/Home/Hospital-Family/OurFamily";
 import SearchBar from "../../Search-Bar/SearchBar";
 import NavTop from "../../NavBar/NavTop";
 import Services from "../../Services/Services";

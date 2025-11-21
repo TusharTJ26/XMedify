@@ -2,7 +2,7 @@ import NavBar from "../../NavBar/NavBar";
 import NavTop from "../../NavBar/NavTop";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Booking.css";
-import FooterElement from "../../Footer/Footer";
+import FooterElement from "../../Components/Common/Footers/Footer";
 import MedicalCenterCard from "../../Medical-Center-Card/MedicalCenterCard";
 import { useState } from "react";
 export default function Booking({ medicalCenterData }) {
