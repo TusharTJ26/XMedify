@@ -87,10 +87,9 @@ function App() {
         console.error("an error occured", e);
       }
     };
-    if (selectedCity) {
-      fetchCenter();
-    }
-  }, [selectedCity]);
+
+    fetchCenter();
+  }, [selectedCity, selectedState]);
 
   console.log(medicalCenterData);
   console.log("booking", booking);
