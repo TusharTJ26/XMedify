@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import Blog from "../../Components/Home/Blog/Blogs";
 import Questions from "../../Components/Common/FAQ/FAQ";
 import FooterElement from "../../Components/Common/Footers/Footer";
-import Goal from "../../Goal/Goal";
+import Goal from "../../Components/Home/Goal/Goal";
 import MedicalSpecialist from "../../Medical-Specialist/MedicalSpecialist";
 import NavBar from "../../NavBar/NavBar";
 import OurFamily from "../../Components/Home/Hospital-Family/OurFamily";
