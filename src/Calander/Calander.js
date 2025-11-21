@@ -1,9 +1,9 @@
 import Timings from "./Timings/Timings";
 
-export default function Calander({ data }) {
+export default function Calander({ data, booking, setBooking }) {
   return (
     <>
-      <Timings data={data} />
+      <Timings data={data} booking={booking} setBooking={setBooking} />
     </>
   );
 }

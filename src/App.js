@@ -15,6 +15,32 @@ function App() {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
 
+  // Booking
+  const [booking, setBooking] = useState([]);
+  const [isFirstRender, setIsFirstRender] = useState(true);
+
+  useEffect(() => {
+    setIsFirstRender(false);
+  }, []);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("bookings");
+    if (saved) {
+      // Parse saved bookings (should be an array)
+      setBooking(JSON.parse(saved));
+    } else {
+      // Initialize localStorage with an empty array
+      localStorage.setItem("bookings", JSON.stringify([]));
+    }
+  }, []);
+
+  useEffect(() => {
+    // localStorage.setItem("bookings", booking);
+    if (!isFirstRender) {
+      localStorage.setItem("bookings", JSON.stringify(booking));
+    }
+  }, [booking]);
+
   // Fetching States
   useEffect(() => {
     const fetchState = async () => {
@@ -44,7 +70,9 @@ function App() {
         console.error("an error occured", e);
       }
     };
-    fetchCity();
+    if (selectedState) {
+      fetchCity();
+    }
   }, [selectedState]);
   // Fetching Medical Centers
   useEffect(() => {
@@ -63,6 +91,7 @@ function App() {
   }, [selectedCity]);
 
   console.log(medicalCenterData);
+  console.log("booking", booking);
   // console.log(cityData);
   return (
     <div className="App">
@@ -102,12 +131,20 @@ function App() {
               setSelectedState={setSelectedState}
               medicalCenterData={medicalCenterData}
               setMedicalCenterData={setMedicalCenterData}
+              booking={booking}
+              setBooking={setBooking}
             />
           }
         />
         <Route
           path="/my-bookings"
-          element={<Booking medicalCenterData={medicalCenterData} />}
+          element={
+            <Booking
+              medicalCenterData={medicalCenterData}
+              booking={booking}
+              setBooking={setBooking}
+            />
+          }
         />
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>

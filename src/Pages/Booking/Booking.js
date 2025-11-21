@@ -4,16 +4,26 @@ import SearchIcon from "@mui/icons-material/Search";
 import "./Booking.css";
 import FooterElement from "../../Components/Common/Footers/Footer";
 import MedicalCenterCard from "../../Medical-Center-Card/MedicalCenterCard";
-import { useState } from "react";
-export default function Booking({ medicalCenterData }) {
+import { useState, useEffect } from "react";
+export default function Booking({ medicalCenterData, booking, setBooking }) {
   let medicalCenterDataLength = 1;
   const [search, setSearch] = useState("Search By Hospital");
-  const [filteredBooking, setFilteredBooking] = useState();
+  const [filteredBooking, setFilteredBooking] = useState(booking);
 
   const handleSearch = () => {
-    return;
+    const filteredData = booking.filter((item) => {
+      if (
+        item.hospital["Hospital Name"]
+          .toLowerCase()
+          .includes(search.toLowerCase())
+      ) {
+        return item;
+      }
+    });
+    setFilteredBooking(filteredData);
   };
 
+  console.log(filteredBooking);
   return (
     <div
       style={{
@@ -64,13 +74,14 @@ export default function Booking({ medicalCenterData }) {
               gap: "50px",
             }}
           >
-            {medicalCenterData.map((item) => {
+            {booking.map((item, index) => {
+              // console.log(item.hospital);
               return (
-                <div>
+                <div key={index}>
                   <MedicalCenterCard
-                    key={item["Provider ID"]}
-                    data={item}
-                    booking={true}
+                    data={item.hospital}
+                    time={item.time}
+                    bookingPage={true}
                   />
                 </div>
               );

@@ -4,7 +4,14 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
-export default function Confirm({ data, time, open, handleClose }) {
+export default function Confirm({
+  data,
+  time,
+  open,
+  handleClose,
+  booking,
+  setBooking,
+}) {
   const style = {
     position: "absolute",
     top: "50%",
@@ -17,8 +24,17 @@ export default function Confirm({ data, time, open, handleClose }) {
     p: 4,
   };
   const handleBooking = () => {
-    console.log(data, time);
+    const dataToSave = {
+      hospital: data,
+      time: time,
+    };
+    // setBooking((prevData) => ({
+    //   ...prevData,
+    //   dataToSave,
+    // }));
+    setBooking((prev) => [...prev, dataToSave]);
   };
+  console.log("booking", booking);
   return (
     <div>
       {/* <Button onClick={handleOpen}>Open modal</Button> */}

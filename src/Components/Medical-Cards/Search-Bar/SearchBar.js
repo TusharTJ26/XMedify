@@ -32,11 +32,9 @@ export default function SearchBar({
             </option>
             {stateData.map((state) => {
               return (
-                <div id="state">
-                  <option key={state} value={state}>
-                    {state}
-                  </option>
-                </div>
+                <option key={state} value={state}>
+                  <div id="state">{state}</div>
+                </option>
               );
             })}
           </select>
@@ -52,11 +50,9 @@ export default function SearchBar({
             </option>
             {cityData.map((city) => {
               return (
-                <div id="city">
-                  <option key={city} value={city}>
-                    {city}
-                  </option>
-                </div>
+                <option key={city} value={city}>
+                  <div id="city">{city}</div>
+                </option>
               );
             })}
           </select>

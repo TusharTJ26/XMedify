@@ -1,7 +1,7 @@
 import Confirm from "../ConfirmationForm";
 import "./Timings.css";
 import { useState } from "react";
-export default function Timings({ data }) {
+export default function Timings({ data, booking, setBooking }) {
   const morning = ["11:30 AM"];
   const afternoon = ["12:00 PM", "12:30 PM", "1:30 PM", "2:00 PM", "2:30 PM"];
   const evening = ["6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM"];
@@ -66,6 +66,8 @@ export default function Timings({ data }) {
           data={data}
           time={selectedTime}
           open={modalOpen}
+          booking={booking}
+          setBooking={setBooking}
           handleClose={() => setModalOpen(false)}
         />
       )}

@@ -4,7 +4,13 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 import Calander from "../Calander/Calander";
-export default function MedicalCenterCard({ data, booking }) {
+export default function MedicalCenterCard({
+  data,
+  time,
+  bookingPage,
+  booking,
+  setBooking,
+}) {
   const navigate = useNavigate();
   const [isBooking, setIsBooking] = useState(false);
   return (
@@ -63,9 +69,9 @@ export default function MedicalCenterCard({ data, booking }) {
             </div>
           </div>
           <div className="medical-center-booking-btn-holder">
-            {booking ? (
+            {bookingPage ? (
               <div style={{ display: "flex", gap: "35px" }}>
-                <div className="booked-time"> </div>
+                <div className="booked-time">{time} </div>
                 <div className="booked-date"> </div>
               </div>
             ) : (
@@ -90,7 +96,11 @@ export default function MedicalCenterCard({ data, booking }) {
           </div>
         </div>
       </div>
-      {isBooking ? <Calander data={data} /> : ""}
+      {isBooking ? (
+        <Calander data={data} booking={booking} setBooking={setBooking} />
+      ) : (
+        ""
+      )}
     </div>
   );
 }

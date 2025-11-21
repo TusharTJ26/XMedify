@@ -17,6 +17,8 @@ export default function MedicalCenter({
   setSelectedState,
   medicalCenterData,
   setMedicalCenterData,
+  booking,
+  setBooking,
 }) {
   const medicalCenterDataLength = medicalCenterData.length;
 
@@ -86,7 +88,11 @@ export default function MedicalCenter({
             {medicalCenterData.map((item) => {
               return (
                 <div key={item["Provider ID"]}>
-                  <MedicalCenterCard data={item} />
+                  <MedicalCenterCard
+                    data={item}
+                    booking={booking}
+                    setBooking={setBooking}
+                  />
                 </div>
               );
             })}
