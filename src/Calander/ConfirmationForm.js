@@ -48,9 +48,15 @@ export default function Confirm({
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Confirm your booking in {data["Hospital Name"]} at {time}
+            {/* {selectedDate.length < 1 */}
+            {Object.keys(selectedDate).length < 1
+              ? "Please Select a Date to proceed"
+              : `Confirm your booking in ${data["Hospital Name"]} at ${selectedDate.date} ${time}`}
           </Typography>
           <Button
+            style={{
+              display: Object.keys(selectedDate).length < 1 ? "none" : "",
+            }}
             onClick={() => {
               handleBooking();
               handleClose();
