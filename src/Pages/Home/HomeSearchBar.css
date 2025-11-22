@@ -11,7 +11,8 @@
   height: 50px;
   border-width: 1px;
 } */
-.home-search-bar select {
+/* .home-search-bar select { */
+.home-search-bar-select {
   width: 285px;
   height: 50px;
   border-width: 1px solid rgba(240, 240, 240, 1);

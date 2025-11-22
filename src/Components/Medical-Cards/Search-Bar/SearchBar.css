@@ -5,7 +5,7 @@
   padding: 27px 24px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 6px 6px 35px rgba(16, 40, 81, 0.11);
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   z-index: 3;
 }
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
 }
-.searchBar-form select {
+.searchBar-form-select-field {
   height: 50px;
   border: 1px rgba(240, 240, 240, 1) solid;
   border-radius: 8px;
