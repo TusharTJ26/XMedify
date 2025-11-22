@@ -30,17 +30,15 @@ export default function SearchBar({
               setSelectedState(e.target.value);
             }}
           >
-            <li>
+            <li key="state">
               <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
                 State
               </option>
             </li>
             {stateData.map((state) => {
               return (
-                <li>
-                  <option key={state} value={state}>
-                    {state}
-                  </option>
+                <li key={state}>
+                  <option value={state}>{state}</option>
                 </li>
               );
             })}
@@ -53,17 +51,15 @@ export default function SearchBar({
             style={{ width: "522px" }}
             onChange={(e) => setCity(e.target.value)}
           >
-            <li>
+            <li key="city">
               <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
                 City
               </option>
             </li>
             {cityData.map((city) => {
               return (
-                <li>
-                  <option key={city} value={city}>
-                    {city}
-                  </option>
+                <li key={city}>
+                  <option value={city}>{city}</option>
                 </li>
               );
             })}
