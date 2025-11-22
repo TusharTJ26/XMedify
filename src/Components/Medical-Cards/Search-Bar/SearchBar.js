@@ -24,6 +24,7 @@ export default function SearchBar({
         <div id="state">
           {/* <input type="text" placeholder="State" style={{ width: "326px" }} /> */}
           <select
+            required
             style={{ width: "326px" }}
             onChange={(e) => {
               // setState(e.target.value);
@@ -45,6 +46,7 @@ export default function SearchBar({
         <div id="city">
           {/* <input type="text" placeholder="City" style={{ width: "522px" }} /> */}
           <select
+            required
             style={{ width: "522px" }}
             onChange={(e) => setCity(e.target.value)}
           >
