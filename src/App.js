@@ -122,7 +122,7 @@ function App() {
           }
         />
         <Route
-          path="/medical-center"
+          path="/search"
           element={
             <MedicalCenter
               cityData={cityData}

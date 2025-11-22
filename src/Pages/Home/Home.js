@@ -66,7 +66,7 @@ export default function Home({
             </div>
             <div
               style={{ marginTop: "32px" }}
-              onClick={() => navigate("/medical-center")}
+              onClick={() => navigate("/search")}
             >
               <button
                 style={{

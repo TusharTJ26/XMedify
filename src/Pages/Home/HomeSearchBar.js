@@ -51,7 +51,7 @@ export default function HomeSearchBar({
         <button
           type="submit"
           id="searchBtn"
-          onClick={() => navigate("/medical-center")}
+          onClick={() => navigate("/search")}
         >
           <SearchIcon /> Search
         </button>

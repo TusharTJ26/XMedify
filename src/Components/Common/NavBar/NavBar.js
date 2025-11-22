@@ -13,8 +13,8 @@ export default function NavBar({ home }) {
       </div>
       <div className="nav-items">
         <ul type="none">
-          <li onClick={() => navigate("/medical-center")}>Find Doctors</li>
-          <li onClick={() => navigate("/medical-center")}>Hospitals</li>
+          <li onClick={() => navigate("/search")}>Find Doctors</li>
+          <li onClick={() => navigate("/search")}>Hospitals</li>
           <li>Medicines</li>
           <li>Surgeries</li>
           <li>Software for Provider</li>
