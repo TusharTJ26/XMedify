@@ -29,13 +29,15 @@ export default function HomeSearchBar({
             }}
           >
             <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-              <SearchIcon />
-              State
+              <li>
+                <SearchIcon />
+                State
+              </li>
             </option>
             {stateData.map((state) => {
               return (
                 <option key={state} value={state}>
-                  {state}
+                  <li>{state}</li>
                 </option>
               );
             })}
@@ -44,13 +46,15 @@ export default function HomeSearchBar({
         <div id="city">
           <select onChange={(e) => setCity(e.target.value)} required>
             <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-              <SearchIcon />
-              City
+              <li>
+                <SearchIcon />
+                City
+              </li>
             </option>
             {cityData.map((city) => {
               return (
                 <option key={city} value={city}>
-                  {city}
+                  <li>{city}</li>
                 </option>
               );
             })}

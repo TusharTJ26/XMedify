@@ -93,7 +93,6 @@ function App() {
   }, [selectedCity, selectedState]);
 
   console.log(medicalCenterData);
-  console.log("booking", booking);
   // console.log(cityData);
   return (
     <div className="App">

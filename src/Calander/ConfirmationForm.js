@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import { useState } from "react";
+
 export default function Confirm({
   data,
   time,
@@ -24,12 +24,22 @@ export default function Confirm({
     boxShadow: 24,
     p: 4,
   };
+  console.log(data);
   const handleBooking = () => {
     const dataToSave = {
-      hospital: data,
-      time: time,
-      date: selectedDate.date,
+      "Hospital Name": data["Hospital Name"],
+      City: data.City,
+      State: data.State,
+      "Hospital Type": data["Hospital Type"],
+      "Hospital overall rating": data["Hospital overall rating"],
+      bookingDate: selectedDate.date,
+      bookingTime: time,
     };
+    // const dataToSave = {
+    //   hospital: data,
+    //   time: time,
+    //   date: selectedDate.date,
+    // };
     // setBooking((prevData) => ({
     //   ...prevData,
     //   dataToSave,

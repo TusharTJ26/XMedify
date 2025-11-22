@@ -1,6 +1,5 @@
 import "./SearchBar.css";
 import SearchIcon from "@mui/icons-material/Search";
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 export default function SearchBar({
   cityData,
@@ -17,7 +16,7 @@ export default function SearchBar({
     e.preventDefault();
     setSelectedCity(city);
   };
-  const navigate = useNavigate();
+
   return (
     <div className="search-holder">
       <form className="searchBar-form" onSubmit={handleForm}>
@@ -32,12 +31,12 @@ export default function SearchBar({
             }}
           >
             <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-              State
+              <li>State</li>
             </option>
             {stateData.map((state) => {
               return (
                 <option key={state} value={state}>
-                  {state}
+                  <li>{state}</li>
                 </option>
               );
             })}
@@ -51,12 +50,12 @@ export default function SearchBar({
             onChange={(e) => setCity(e.target.value)}
           >
             <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-              City
+              <li>City</li>
             </option>
             {cityData.map((city) => {
               return (
                 <option key={city} value={city}>
-                  {city}
+                  <li>{city}</li>
                 </option>
               );
             })}
