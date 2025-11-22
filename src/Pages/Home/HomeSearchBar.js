@@ -28,34 +28,38 @@ export default function HomeSearchBar({
               setSelectedState(e.target.value);
             }}
           >
-            <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-              <li>
+            <li>
+              <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
                 <SearchIcon />
                 State
-              </li>
-            </option>
+              </option>
+            </li>
             {stateData.map((state) => {
               return (
-                <option key={state} value={state}>
-                  <li>{state}</li>
-                </option>
+                <li>
+                  <option key={state} value={state}>
+                    {state}
+                  </option>
+                </li>
               );
             })}
           </select>
         </div>
         <div id="city">
           <select onChange={(e) => setCity(e.target.value)} required>
-            <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
-              <li>
+            <li>
+              <option value="" style={{ color: "rgba(171, 182, 199, 1)" }}>
                 <SearchIcon />
                 City
-              </li>
-            </option>
+              </option>
+            </li>
             {cityData.map((city) => {
               return (
-                <option key={city} value={city}>
-                  <li>{city}</li>
-                </option>
+                <li>
+                  <option key={city} value={city}>
+                    {city}
+                  </option>
+                </li>
               );
             })}
           </select>
