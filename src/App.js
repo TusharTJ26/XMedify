@@ -81,6 +81,10 @@ function App() {
         const response = await fetch(
           `https://meddata-backend.onrender.com/data?state=${selectedState}&city=${selectedCity}`
         );
+        if (!response.ok) {
+          throw new Error(`Server error: ${response.status}`);
+        }
+
         const data = await response.json();
         setMedicalCenterData(data);
       } catch (e) {
@@ -90,7 +94,7 @@ function App() {
     if (selectedCity && selectedState) {
       fetchCenter();
     }
-  }, [selectedCity]);
+  }, [selectedState, selectedCity]);
 
   console.log(medicalCenterData);
   // console.log(cityData);

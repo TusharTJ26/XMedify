@@ -56,7 +56,8 @@ export default function MedicalCenter({
             <div className="medical-center-number">
               <h1>
                 {medicalCenterDataLength} medical centers available in{" "}
-                {selectedCity}
+                {selectedCity.toLowerCase()}
+                {/* {selectedCity} */}
               </h1>
               <p>
                 Book appointments with minimum wait-time & verified doctor
