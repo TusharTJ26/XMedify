@@ -79,10 +79,18 @@ export default function Booking({ medicalCenterData, booking, setBooking }) {
               return (
                 <div key={index}>
                   <MedicalCenterCard
-                    data={item.hospital}
-                    time={item.time}
+                    // data={item.hospital}
+                    data={{
+                      "Hospital Name": item["Hospital Name"],
+                      City: item.City,
+                      State: item.State,
+                      "Hospital overall rating":
+                        item["Hospital overall rating"],
+                      "Hospital Type": item["Hospital Type"],
+                    }}
+                    time={item.bookingTime}
                     bookingPage={true}
-                    date={item.date}
+                    date={item.bookingDate}
                   />
                 </div>
               );
