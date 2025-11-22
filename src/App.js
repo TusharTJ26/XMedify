@@ -90,7 +90,7 @@ function App() {
     if (selectedCity && selectedState) {
       fetchCenter();
     }
-  }, [selectedCity, selectedState]);
+  }, [selectedCity]);
 
   console.log(medicalCenterData);
   // console.log(cityData);
